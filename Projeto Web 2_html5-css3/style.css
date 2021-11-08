@@ -1,0 +1,46 @@
+body{
+	background: #d2d2c1 url(img/fundo.png);
+	font: 16px Bradley Hand, cursive, sans-serif;
+}
+#principal{
+	width: 900px;
+}
+#home{
+	background-color: #c5c5b2;
+	padding: 18px;
+	width: 0 50px;
+
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px ;
+	color: #2A1B0A;
+}
+.paragrafo1{
+	background: white;
+
+}
+#rodape{
+	text-align: center;
+	margin: 20px;
+}
+
+
+h1{
+	color: #828271;
+	font-size: 1.2em;
+}
+.espaco1{
+	
+	padding: 10px;
+}
+.img2{
+	margin: 20px 10px;
+	border: solid 10px #c3c3ae;
+	padding: 0 0 0 0;
+
+
+
+}
+/*900 388*/
