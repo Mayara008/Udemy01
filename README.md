@@ -1,6 +1,6 @@
 # Projeto01 
 
-Um projeto simples utilizando HTML5 puro. 
+Um projeto simples utilizando HTML5 puro. (Sem comentário)
 
 ### UNES 
 
