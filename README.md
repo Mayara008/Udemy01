@@ -6,3 +6,11 @@ Um projeto simples utilizando HTML5 puro. (Sem comentário)
 
 * Site informativo da Faculdade 
 
+# Projeto02 
+
+Um projeto simples utilizando HTML5 e css2. (Sem comentário)
+
+### Anna Bella 
+
+* Site sobre uma modelo 
+
