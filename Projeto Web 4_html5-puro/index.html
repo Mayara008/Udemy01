@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - HTML5</title>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom, black, purple);
+        }
+        #fundo-formulario{
+            background: #ffff;
+            padding: 20px;
+            width: 820px ;
+            margin: 30px auto;
+        }
+        button{
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fundo-formulario">
+        <form method="post" id="formContato" action="mailto:mayara_b2k@hotmail.com" > 
+        <!-- (form) Cria um formulário -->
+        <!-- (method) Metodo do formulário -->
+        <!-- ("post")O dado será enviado por pacote dentro da solicitação que foi realizada ao site -->
+        <!-- (action)Para onde o dado será enviado -->
+        <!-- ("mailto:contato@may.com")Todos os dados digitados peli visitante do site será enviado para o meu e-mail -->
+            <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+            <!--(fieldset) Conjunto de campos. Terá uma borda  -->
+            <!-- (legend)Cria o titulo para o fieldset -->
+                <p> <label for="campoNome">Nome:</label> <input type="text" name="textNome" id="campoNome" size="20" maxlength="30" placeholder="Nome Completo" ></p>
+                <!-- (label) Referenciar objetos ao seus IDs-->
+                <!-- (for)Aponta para o ID do input -->
+                <!-- (input)Cria o campo do fomulário, uma caixa -->
+                <!-- (type)Indica que tipo será o campo do imput do formalário -->
+                <!-- (type="text")O campo será uma Caixa de texto-->
+                <!-- (name)Nome do CAMPO do formulário -->
+                <!-- (maxlength)Quantidade de caractere que vai aceitar -->
+                <!-- (size)quantidade de caracteres que vão aparecer -->
+                <!-- (placeholder)Dá uma dica do que o usuario deve escrever -->
+                <p> <label for="campoSenha">Senha:</label> <input type="password" name="textSenha" id="campoSenha" size="8" maxlength="8" placeholder="8 Digitos"> </p>
+                <!-- (type="password")Indicado que esse campo será de tipo senha -->
+                <p> <label for="campoEmail">E-mail:</label> <input type="email" name="textEmail" id="campoEmail" size="20" maxlength="40" placeholder="Digite seu E-mail" > </p>
+                <fieldset id="sexo"><legend>Sexo:</legend>
+                        <input type="radio" name="textSexo" id="campoMasc" checked> <label for="campoMasc">Masculino</label><br>
+                        <input type="radio" name="textSexo" id="campoFem"> <label for="campoFem">Feminino</label>
+                        <!-- (checked)Deixa o elemento sempre marcado -->
+                        <!-- (type="radio")Indica escolha, campo de bolinha -->
+                        
+                </fieldset>
+                <p> <label for="campoNascimento"> Data de Nascimento:</label> <input type="date" name="textNascimento" id="campoNascimento" size="" maxlength="" placeholder="">  </p>
+                <!-- (type="date")indica data, o calendario -->
+            </fieldset>    
+
+            <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+                    <p><label for="campoRua"> Logradouro:</label> <input type="text" name="textRua" id="campoRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."></p>
+                    <p></p><label for="campoNumero">Número:</label> <input type="number" name="textNumero" id="campoNumero" min="0" max="9999999" size="" maxlength="" placeholder=""> </p>
+                    <!-- (min)Minimo valor que será aceito -->
+                    <!-- (max)Maximo valor que será aceito -->
+                    <p><label for="campoEstado">Estado</label> 
+                    <select name="textEstado" id="campoEstado">
+                        <optgroup label="Região Sudeste"><option value="RJ">Rio de Janeiro</option>
+                        <!-- (optgroup)Seleciona em grupo -->
+                            <option selected value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                        <optgroup label="Região Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select></p>
+                    <!-- (select)Vai criar caixa combinadas, objeto para seleção de estaodo  -->
+                    <!-- (option)tras caixa de opções -->
+                    <p><label for="campoCidade">Cidade:</label> <input type="text" name="textCidade" id="campoCidade" size="20" maxlength="40" placeholder="Digite sua Cidade" list="cidades"> </p>
+                    <datalist id="cidades">
+                    <!-- (list) sistema de auto complemto, tras visivelmente as opções a baixo -->
+                    <!-- (datalist) Tras a lista de opções a baixo, para que o usuario não precise digitar o valor. -->
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Nova Iguaçu"></option>
+                        <option value="Niterói"></option>
+                        <option value="Belford Roxo"></option>
+                    </datalist>
+            </fieldset>
+
+            <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+                    <p><label for="campoUrg">Grau de Urgência:</label> Min <input type="range" name="textUrg" id="campoUrg" min="0" max="10" step="2"> Máx </p>
+                    <!-- (range)Objeto que arrasta p/ esquerda e direita -->
+                    <!-- (step)Qual salto que vai ocorrer entre um valor e outro -->
+                    <p><label for="campoMsg">Mensagem:</label> <textarea name="textMsg" id="campoMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea> </p>
+                    <!-- (textarea)objeto de caixa de texto maior -->
+                    <!-- (cols)Quantidade de colunas que será exibido -->
+                    <!-- (row)quantidade de linhas -->
+            </fieldset>
+
+            <fieldset id="pedido"><legend>Quero Sapato</legend>
+                    <p><input type="checkbox" name="textPed" id="campoPed" checked>
+                    Gostaria de adquirir um Sapato 34 quando disponível!</p>
+                    <!-- (checkbox)Marca o conteúdo-->
+                    <p><label for="campoCor">Cor:</label> <input type="color" name="textCor" id="campoCor" > </p>
+                    <p><label for="campoQtdd">Quantidade:</label> <input type="number" name="textQntdd" id="campoQtdd" min="0" max="999999"> </p>
+                    <p><label for="campoPrecot">Preço Total:</label> <input type="text" name="textPrecot" id="campoPrecot" placeholder="Total a Pagar" readonly> </p>
+                    <!-- (readonly)Não deixa entrar valor -->
+            </fieldset> 
+            
+            <button type="submit">Enviar</button>
+            
+        </form>
+    </div>
+</body>
+</html>
