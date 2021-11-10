@@ -25,7 +25,7 @@ Um projeto simples utilizando HTML5 e css3. (Comentado)
  
 # Projeto04 
 
-Formulário utilizando html5 puro (Comentado)
+Utilizando html5 puro (Comentado)
 
 ### Formulário 
 
