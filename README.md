@@ -1,6 +1,6 @@
 # Projeto01 
 
-Um projeto simples utilizando HTML5 puro. (Sem comentário)
+Um projeto utilizando HTML5 puro. (Sem comentário)
 
 ### UNES 
 
@@ -8,7 +8,7 @@ Um projeto simples utilizando HTML5 puro. (Sem comentário)
 
 # Projeto02 
 
-Um projeto simples utilizando HTML5 e css3. (Sem comentário)
+Um projeto utilizando HTML5 e css3. (Sem comentário)
 
 ### Anna Bella 
 
@@ -17,7 +17,7 @@ Um projeto simples utilizando HTML5 e css3. (Sem comentário)
  
 # Projeto03 
 
-Um projeto simples utilizando HTML5 e css3. (Comentado)
+Um projeto utilizando HTML5 e css3. (Comentado)
 
 ### TecBlog 
 
