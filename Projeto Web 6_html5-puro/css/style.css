@@ -1,0 +1,264 @@
+/* Estrutura do site */
+
+/* (*) Formatação para todas as paginas */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* (repeat-x ) Para repetir aoenas horizontal  f1f1f1*/
+    background: #fcfdfd url(/img/2\ \(3\).png) repeat-x ;
+}
+
+#container{
+    /* (width)Definir largura */
+    width: 750px;
+    /* (margin com : 0 auto ) vai centralizar o conteúdo do meu site, pq está sentro do container e a margem foi centralizada.*/
+    margin: 0 auto;
+
+     /* background:  red;  */
+}
+
+#topo{
+    /* (height) Definir altura */
+    height: 150px;
+    /* (background) Como a imagem está como background ela vai parecer normalmente, independente do conteúdo */
+    /* (no-repeat) para não repetir a imagem */
+    /* (right top) para imagem ficar no top a direita */
+    background: url(/img/2\ \(5\).png) no-repeat right center;
+    /* (padding-top) Colcoando um espaçamento no topo do meu conteúdo, só na parte superior */
+    padding-top: 25px;
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(../img/flores\(3\).png) no-repeat center;
+    text-indent: -3000px;
+}
+
+/* -------- Barra de navegação Horizontal ---------- */
+
+ul{ 
+/* Formatação geral para todas as UL que estão dentro do site. */
+    margin: 0;
+    padding: 0;
+    /* (list-style) estilo de lista - TIRA o ponto da lateral de cada item do ul*/
+    list-style: none;
+}
+
+#topo ul{
+    /* (margin-top) adicionar um espaçamento superior externo do conteúdo*/
+    margin-top: 30px;
+    background: #564A26; 
+    /* (float: left) Ele flutua o conteudo em questão, ou seja, tira-o do fluxo de toda a pagina.  */
+    float: left;
+    border-radius: 20px;
+}
+
+#topo ul li{
+    float: left;
+    /* (float-left) quando usei esse código, ele desabilitou o backgroun, necessário utilizar o (float: left) no #topo ul  */
+
+}
+
+#topo ul a{
+    font-size: 0.9em;
+    display: block;
+    /* (padding) Espaçamento interno superior e lateral */
+    padding: 0.5em 1.5em;
+    /* (line-height) altera a altura da barra */
+    line-height: 1.7em;
+    /* (text-decoration) TIRA a marcação abaixo do texto, ou seja, os efeitos do link */
+    text-decoration: none;
+    color: #fcfdfd;
+    /* (background) Será utilizado para colocar um divisor na barra horizontal */
+        /* (no-repeat left center) era pra ser esses 3 codigos, mas eu deixei só o primeiro pq não estava acantnado os outros.  */
+    background: url(../img/divisor.png) no-repeat left center;
+    /* (padding-left) pra centralizar o divisor em imagem substituindo (left center)*/
+}
+
+#topo ul .primeiro a{
+    background: none;
+    border-radius: 20px;
+}
+
+#topo ul a:hover{
+    color: #2c2512;
+}
+
+body.home #navegacao-hor a#home
+/* body.brasil #navegacao-hor a#brasil
+body.internacional #navegacao-hor a#internacional
+body.economia #navegacao-hor a#economia
+body.saude #navegacao-hor a#saude
+body.ciência #navegacao-hor a#ciência
+body.fotos #navegacao-hor a#fotos */
+{
+    color: #fff;
+    background: #7c6b37;
+    /* (cursor) Quando o mouse estiver sobre a palavra a seta vai se tranformar em outro icone */
+    cursor: text;
+}
+
+/* ----------- Configurando layout de três colunas */
+
+#conteudo {
+    /* (margin-top)Margem superior */
+    margin-top: 70px;
+    /* background: blue; */
+    /* #f5f5f5 */
+    float: left;
+}
+
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+    /* background: red; */
+    
+}
+
+#primario {
+    width: 270px;
+    float: left;
+    /* (margin) está deixando as colunas uma ao lado da outra */
+    margin: 0 0 20px 195px;
+    /* background: pink; */
+}
+
+#duas-colunas #primario {
+    width: 555px;
+    /* float: left;
+     (margin) está deixando as colunas uma ao lado da outra 
+    margin: 0 0 20px 195px;
+    background: pink; */
+}
+
+#uma-coluna #primario {
+    width: 750px;
+     /* (margin) está deixando as colunas uma ao lado da outra */
+    margin: 0 0 20px 0px;
+    /* float: left;
+    background: pink; */
+}
+
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px ; 
+    /* background: green; */
+}
+
+/* CAIXA */
+.caixa{
+    /* (margin) Para deixar o espaçamento entre as caixas. */
+    margin: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
+    background: #f3f3f3;
+    background: url(../img/fundo-caixa1\(3\).png);
+}
+
+h2{
+    font-size: 1em;
+    background: #4dbbcc;
+    color: #fcfdfd;
+    /* #2c2512 */
+    padding: 5px;
+    margin: 0 5px 0 5px;
+}
+
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* FORMATAR MENUS LATERAIS */
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+    background: #f9f9f9 url(../img/marcador.png) no-repeat left center;
+    padding-left: 20px ;
+    color: #a1a1a1;
+    
+}
+
+/* FORMATANDO FORMULÁRIO */
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    padding: 5px;
+    margin: 3px;
+    width: 125px;
+    font-size: 0.7em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 60px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/* FORMATANDO IMAGENS */
+img{
+    border: solid 2px #dfdfdf;
+    margin: 10px
+}
+
+img.imagem-principal{
+    width: 90%;
+    border: 3px solid #dfdfdf;
+}
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background: #564A26;
+    color: #fff;
+
+}
+
+/* RODAPE */
+#container-rodape
+{
+    background: #2c2512;
+    padding: 20px;
+}
+
+#rodape{
+    width: 750px;
+   /* (margin: 0 auto) entralizar todo o conteudo */
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Aula 70 - Quando for mexer em mais colunas */
