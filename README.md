@@ -38,3 +38,11 @@ Pagina utilizando HTML5 e css3 (Sem comentário)
 ### Parallax
 
 * Pagina com parallax img 
+
+# Projeto06
+
+Pagina utilizando HTML5 e css3 (Comentado)
+
+### Flores Noticias
+
+* Site de noticias 
